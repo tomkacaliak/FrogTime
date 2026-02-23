@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="1" lineNum="13" parent="globals/FrogTimeView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="2" lineNum="31" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="2" lineNum="32" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" id="3" lineNum="6" parent="globals/Background" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/bin/gen/006-B3907-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="5" lineNum="5" parent="globals/FrogTimeApp" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="6" lineNum="225" parent="globals/FrogTimeView" pc="268435537" symbol="onExitSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="6" lineNum="226" parent="globals/FrogTimeView" pc="268435539" symbol="onExitSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="6" lineNum="227" parent="globals/FrogTimeView" pc="268435547" symbol="onExitSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="33" parent="globals/FrogTimeView" pc="268435559" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="34" parent="globals/FrogTimeView" pc="268435562" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="36" parent="globals/FrogTimeView" pc="268435595" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="37" parent="globals/FrogTimeView" pc="268435619" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="38" parent="globals/FrogTimeView" pc="268435634" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="39" parent="globals/FrogTimeView" pc="268435638" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="40" parent="globals/FrogTimeView" pc="268435642" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="43" parent="globals/FrogTimeView" pc="268435664" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="44" parent="globals/FrogTimeView" pc="268435702" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="45" parent="globals/FrogTimeView" pc="268435740" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="46" parent="globals/FrogTimeView" pc="268435778" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="50" parent="globals/FrogTimeView" pc="268435816" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="51" parent="globals/FrogTimeView" pc="268435854" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="54" parent="globals/FrogTimeView" pc="268435892" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="8" lineNum="55" parent="globals/FrogTimeView" pc="268435930" symbol="onLayout"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="9" lineNum="230" parent="globals/FrogTimeView" pc="268435969" symbol="onEnterSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="9" lineNum="231" parent="globals/FrogTimeView" pc="268435971" symbol="onEnterSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="9" lineNum="232" parent="globals/FrogTimeView" pc="268435979" symbol="onEnterSleep"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="10" lineNum="29" parent="globals/FrogTimeView" pc="268435991" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="10" lineNum="30" parent="globals/FrogTimeView" pc="268435993" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="61" parent="globals/FrogTimeView" pc="268436006" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="63" parent="globals/FrogTimeView" pc="268436009" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="64" parent="globals/FrogTimeView" pc="268436021" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="65" parent="globals/FrogTimeView" pc="268436075" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="66" parent="globals/FrogTimeView" pc="268436099" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="68" parent="globals/FrogTimeView" pc="268436111" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="70" parent="globals/FrogTimeView" pc="268436131" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="71" parent="globals/FrogTimeView" pc="268436140" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="74" parent="globals/FrogTimeView" pc="268436149" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="77" parent="globals/FrogTimeView" pc="268436157" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="78" parent="globals/FrogTimeView" pc="268436165" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="79" parent="globals/FrogTimeView" pc="268436186" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="80" parent="globals/FrogTimeView" pc="268436212" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="82" parent="globals/FrogTimeView" pc="268436238" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="83" parent="globals/FrogTimeView" pc="268436255" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="87" parent="globals/FrogTimeView" pc="268436277" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="88" parent="globals/FrogTimeView" pc="268436289" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="90" parent="globals/FrogTimeView" pc="268436297" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="91" parent="globals/FrogTimeView" pc="268436311" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="92" parent="globals/FrogTimeView" pc="268436325" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="93" parent="globals/FrogTimeView" pc="268436335" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="96" parent="globals/FrogTimeView" pc="268436345" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="97" parent="globals/FrogTimeView" pc="268436362" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="98" parent="globals/FrogTimeView" pc="268436380" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="100" parent="globals/FrogTimeView" pc="268436410" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="101" parent="globals/FrogTimeView" pc="268436426" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="102" parent="globals/FrogTimeView" pc="268436437" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="104" parent="globals/FrogTimeView" pc="268436457" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="106" parent="globals/FrogTimeView" pc="268436473" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="109" parent="globals/FrogTimeView" pc="268436500" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="110" parent="globals/FrogTimeView" pc="268436517" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="111" parent="globals/FrogTimeView" pc="268436527" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="112" parent="globals/FrogTimeView" pc="268436530" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="113" parent="globals/FrogTimeView" pc="268436540" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="116" parent="globals/FrogTimeView" pc="268436578" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="117" parent="globals/FrogTimeView" pc="268436590" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="118" parent="globals/FrogTimeView" pc="268436608" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="119" parent="globals/FrogTimeView" pc="268436627" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="120" parent="globals/FrogTimeView" pc="268436649" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="124" parent="globals/FrogTimeView" pc="268436671" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="125" parent="globals/FrogTimeView" pc="268436674" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="126" parent="globals/FrogTimeView" pc="268436677" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="127" parent="globals/FrogTimeView" pc="268436689" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="128" parent="globals/FrogTimeView" pc="268436695" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="128" parent="globals/FrogTimeView" pc="268436706" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="129" parent="globals/FrogTimeView" pc="268436718" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="129" parent="globals/FrogTimeView" pc="268436729" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="132" parent="globals/FrogTimeView" pc="268436744" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="133" parent="globals/FrogTimeView" pc="268436751" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="134" parent="globals/FrogTimeView" pc="268436763" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="135" parent="globals/FrogTimeView" pc="268436766" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="136" parent="globals/FrogTimeView" pc="268436783" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="138" parent="globals/FrogTimeView" pc="268436795" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="139" parent="globals/FrogTimeView" pc="268436812" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="140" parent="globals/FrogTimeView" pc="268436821" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="141" parent="globals/FrogTimeView" pc="268436841" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="144" parent="globals/FrogTimeView" pc="268436853" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="145" parent="globals/FrogTimeView" pc="268436866" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="149" parent="globals/FrogTimeView" pc="268436879" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="150" parent="globals/FrogTimeView" pc="268436896" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="152" parent="globals/FrogTimeView" pc="268436899" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="153" parent="globals/FrogTimeView" pc="268436909" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="157" parent="globals/FrogTimeView" pc="268436919" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="158" parent="globals/FrogTimeView" pc="268436924" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="159" parent="globals/FrogTimeView" pc="268436934" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="160" parent="globals/FrogTimeView" pc="268436944" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="161" parent="globals/FrogTimeView" pc="268436954" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="163" parent="globals/FrogTimeView" pc="268436967" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="164" parent="globals/FrogTimeView" pc="268436974" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="165" parent="globals/FrogTimeView" pc="268436981" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="166" parent="globals/FrogTimeView" pc="268436988" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="167" parent="globals/FrogTimeView" pc="268436995" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="171" parent="globals/FrogTimeView" pc="268437002" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="172" parent="globals/FrogTimeView" pc="268437011" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="174" parent="globals/FrogTimeView" pc="268437048" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="176" parent="globals/FrogTimeView" pc="268437073" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="177" parent="globals/FrogTimeView" pc="268437099" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="178" parent="globals/FrogTimeView" pc="268437129" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="181" parent="globals/FrogTimeView" pc="268437159" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="182" parent="globals/FrogTimeView" pc="268437168" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="184" parent="globals/FrogTimeView" pc="268437205" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="186" parent="globals/FrogTimeView" pc="268437225" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="187" parent="globals/FrogTimeView" pc="268437234" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="189" parent="globals/FrogTimeView" pc="268437271" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="192" parent="globals/FrogTimeView" pc="268437296" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="194" parent="globals/FrogTimeView" pc="268437299" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="196" parent="globals/FrogTimeView" pc="268437313" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="197" parent="globals/FrogTimeView" pc="268437318" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="199" parent="globals/FrogTimeView" pc="268437328" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="204" parent="globals/FrogTimeView" pc="268437338" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="205" parent="globals/FrogTimeView" pc="268437343" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="207" parent="globals/FrogTimeView" pc="268437353" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="212" parent="globals/FrogTimeView" pc="268437360" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="213" parent="globals/FrogTimeView" pc="268437366" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="214" parent="globals/FrogTimeView" pc="268437376" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="215" parent="globals/FrogTimeView" pc="268437386" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="216" parent="globals/FrogTimeView" pc="268437396" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" id="12" lineNum="218" parent="globals/FrogTimeView" pc="268437434" symbol="onUpdate"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" id="13" lineNum="8" parent="globals/Background" pc="268437454" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" id="13" lineNum="9" parent="globals/Background" pc="268437457" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" id="13" lineNum="13" parent="globals/Background" pc="268437475" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="14" lineNum="12" parent="globals/FrogTimeApp" pc="268437492" symbol="onStart"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="15" lineNum="25" parent="globals/FrogTimeApp" pc="268437495" symbol="onSettingsChanged"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="15" lineNum="26" parent="globals/FrogTimeApp" pc="268437497" symbol="onSettingsChanged"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="16" lineNum="20" parent="globals/FrogTimeApp" pc="268437509" symbol="getInitialView"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="16" lineNum="21" parent="globals/FrogTimeApp" pc="268437511" symbol="getInitialView"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="17" lineNum="7" parent="globals/FrogTimeApp" pc="268437537" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="17" lineNum="8" parent="globals/FrogTimeApp" pc="268437539" symbol="initialize"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeApp.mc" id="18" lineNum="16" parent="globals/FrogTimeApp" pc="268437552" symbol="onStop"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/bin/gen/006-B3907-00/source/Rez.mcgen" id="19" lineNum="22" parent="globals/Rez/Layouts" pc="268437555" symbol="WatchFace"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/bin/gen/006-B3907-00/source/Rez.mcgen" id="19" lineNum="23" parent="globals/Rez/Layouts" pc="268437566" symbol="WatchFace"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/bin/gen/006-B3907-00/source/Rez.mcgen" id="19" lineNum="25" parent="globals/Rez/Layouts" pc="268437590" symbol="WatchFace"/>
+        <entry filename="/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/bin/gen/006-B3907-00/source/Rez.mcgen" id="19" lineNum="27" parent="globals/Rez/Layouts" pc="268437707" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="7" object="true" symbol="FrogTimeView"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="21" symbol="IconHeart"/>
+        <entry field="true" id="20" symbol="IconBluetooth"/>
+        <entry field="true" id="18" symbol="FrogImageFR265s"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="34" symbol="ColorRed"/>
+        <entry field="true" id="19" symbol="FrogImageFenix7x"/>
+        <entry field="true" id="37" symbol="MilitaryFormatTitle"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="15" symbol="&lt;globals/FrogTimeView/&lt;&gt;_metabolismIcon&gt;"/>
+        <entry id="8388647" module="true" symbol="UserProfile"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="10" symbol="&lt;globals/FrogTimeView/&lt;&gt;_imageMMamaKvaMiniKvaFR265s&gt;"/>
+        <entry field="true" id="13" symbol="&lt;globals/FrogTimeView/&lt;&gt;_imageMajaKvaFenix7x&gt;"/>
+        <entry field="true" id="31" symbol="ColorBlue"/>
+        <entry field="true" id="28" symbol="AppName"/>
+        <entry field="true" id="22" symbol="IconHeartStandard"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry field="true" id="12" symbol="&lt;globals/FrogTimeView/&lt;&gt;_imageMajaKvaFR265s&gt;"/>
+        <entry id="6" object="true" symbol="FrogTimeApp"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="23" symbol="IconMetabolism"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="26" symbol="MamaKvaImageFR265s"/>
+        <entry id="8391489" module="true" symbol="Weather"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="32" symbol="ColorDarkGray"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="35" symbol="ColorWhite"/>
+        <entry field="true" id="9" symbol="&lt;globals/FrogTimeView/&lt;&gt;_heartIcon&gt;"/>
+        <entry field="true" id="30" symbol="ColorBlack"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="27" symbol="MamaKvaImageFenix7x"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="25" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="29" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry field="true" id="8" symbol="&lt;globals/FrogTimeView/&lt;&gt;_bluetoothIcon&gt;"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="11" symbol="&lt;globals/FrogTimeView/&lt;&gt;_imageMMamaKvaMiniKvaFenix7x&gt;"/>
+        <entry field="true" id="14" symbol="&lt;globals/FrogTimeView/&lt;&gt;_isAwake&gt;"/>
+        <entry field="true" id="33" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="36" symbol="ForegroundColorTitle"/>
+        <entry id="17" module="true" symbol="Layouts"/>
+        <entry field="true" id="24" symbol="IconSteps"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="16" symbol="&lt;globals/FrogTimeView/&lt;&gt;_stepIcon&gt;"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435968" name="dc" stackId="1" startPc="268435559"/>
+        <entry endPc="268435967" name="view" stackId="2" startPc="268435562"/>
+        <entry endPc="268435967" name="batY" stackId="3" startPc="268435562"/>
+        <entry endPc="268435967" name="batHeight" stackId="4" startPc="268435562"/>
+        <entry endPc="268435967" name="medzera" stackId="5" startPc="268435562"/>
+        <entry arg="true" endPc="268437453" name="dc" stackId="1" startPc="268436006"/>
+        <entry endPc="268437452" name="clockTime" stackId="2" startPc="268436009"/>
+        <entry endPc="268437452" name="timeString" stackId="3" startPc="268436009"/>
+        <entry endPc="268437452" name="timeView" stackId="4" startPc="268436009"/>
+        <entry endPc="268437452" name="screenW" stackId="5" startPc="268436009"/>
+        <entry endPc="268437452" name="screenH" stackId="6" startPc="268436009"/>
+        <entry endPc="268437452" name="isHighRes" stackId="7" startPc="268436009"/>
+        <entry endPc="268436273" name="secString" stackId="8" startPc="268436165"/>
+        <entry endPc="268436273" name="secX" stackId="9" startPc="268436165"/>
+        <entry endPc="268436273" name="secY" stackId="10" startPc="268436165"/>
+        <entry endPc="268437452" name="stats" stackId="11" startPc="268436009"/>
+        <entry endPc="268437452" name="battery" stackId="12" startPc="268436009"/>
+        <entry endPc="268437452" name="batWidth" stackId="13" startPc="268436009"/>
+        <entry endPc="268437452" name="batHeight" stackId="14" startPc="268436009"/>
+        <entry endPc="268437452" name="batX" stackId="15" startPc="268436009"/>
+        <entry endPc="268437452" name="batY" stackId="16" startPc="268436009"/>
+        <entry endPc="268437452" name="fillWidth" stackId="17" startPc="268436009"/>
+        <entry endPc="268437452" name="textX" stackId="18" startPc="268436009"/>
+        <entry endPc="268437452" name="batFont" stackId="19" startPc="268436009"/>
+        <entry endPc="268437452" name="textCenterY" stackId="20" startPc="268436009"/>
+        <entry endPc="268437452" name="deviceSettings" stackId="21" startPc="268436009"/>
+        <entry endPc="268436667" name="btX" stackId="22" startPc="268436608"/>
+        <entry endPc="268436667" name="btY" stackId="23" startPc="268436608"/>
+        <entry endPc="268437452" name="steps" stackId="24" startPc="268436009"/>
+        <entry endPc="268437452" name="calories" stackId="25" startPc="268436009"/>
+        <entry endPc="268437452" name="activityInfo" stackId="26" startPc="268436009"/>
+        <entry endPc="268437452" name="heartRateString" stackId="27" startPc="268436009"/>
+        <entry endPc="268437452" name="actInfo" stackId="28" startPc="268436009"/>
+        <entry endPc="268437452" name="hr" stackId="29" startPc="268436009"/>
+        <entry endPc="268436852" name="hrHistory" stackId="30" startPc="268436795"/>
+        <entry endPc="268436852" name="hrSample" stackId="31" startPc="268436795"/>
+        <entry endPc="268437452" name="sideFont" stackId="32" startPc="268436009"/>
+        <entry endPc="268437452" name="leftCenter" stackId="33" startPc="268436009"/>
+        <entry endPc="268437452" name="rightCenter" stackId="34" startPc="268436009"/>
+        <entry endPc="268437452" name="topIconY" stackId="35" startPc="268436009"/>
+        <entry endPc="268437452" name="topTextY" stackId="36" startPc="268436009"/>
+        <entry endPc="268437452" name="bottomIconY" stackId="37" startPc="268436009"/>
+        <entry endPc="268437452" name="bottomTextY" stackId="38" startPc="268436009"/>
+        <entry endPc="268437001" name="midY" stackId="39" startPc="268436967"/>
+        <entry endPc="268437452" name="today" stackId="40" startPc="268436009"/>
+        <entry endPc="268437452" name="aktualnyObrazok" stackId="41" startPc="268436009"/>
+        <entry endPc="268437449" name="imgW" stackId="42" startPc="268437366"/>
+        <entry endPc="268437449" name="imgH" stackId="43" startPc="268437366"/>
+        <entry endPc="268437449" name="imgX" stackId="44" startPc="268437366"/>
+        <entry endPc="268437449" name="imgY" stackId="45" startPc="268437366"/>
+        <entry endPc="268437490" name="dictionary" stackId="1" startPc="268437457"/>
+        <entry arg="true" endPc="268437721" name="dc" stackId="1" startPc="268437555"/>
+        <entry endPc="268437721" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="2" startPc="268437566"/>
+        <entry endPc="268437721" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268437566"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B3907-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MamaKvaImageFenix7x"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="IconMetabolism"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="IconSteps"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="IconHeart"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FrogImageFR265s"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="IconHeartStandard"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="MamaKvaImageFR265s"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FrogImageFenix7x"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="IconBluetooth"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/FrogTimeView" offset="134" parentId="globals" symbolId="FrogTimeView" type="class"/>
+        <dataEntry label="globals/Background" offset="313" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="357" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/FrogTimeApp" offset="410" parentId="globals" symbolId="FrogTimeApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="490" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="606" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="641" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="FrogTimeView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Background" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="FrogTimeApp" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435558" name="onExitSleep" parent="FrogTimeView" startPc="268435537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="FrogTimeView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435968" name="onLayout" parent="FrogTimeView" startPc="268435559">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435990" name="onEnterSleep" parent="FrogTimeView" startPc="268435969">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436005" name="initialize" parent="FrogTimeView" startPc="268435991">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="FrogTimeView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437453" name="onUpdate" parent="FrogTimeView" startPc="268436006">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437491" name="initialize" parent="Background" startPc="268437454">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437494" name="onStart" parent="FrogTimeApp" startPc="268437492">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437508" name="onSettingsChanged" parent="FrogTimeApp" startPc="268437495">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437536" name="getInitialView" parent="FrogTimeApp" startPc="268437509">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437551" name="initialize" parent="FrogTimeApp" startPc="268437537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437554" name="onStop" parent="FrogTimeApp" startPc="268437552">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437721" name="WatchFace" parent="Layouts" startPc="268437555">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

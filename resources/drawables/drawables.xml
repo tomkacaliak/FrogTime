@@ -1,0 +1,17 @@
+<resources>
+    <bitmap id="LauncherIcon" filename="MamaKvaMiniKvaFenix7x.png" />
+
+    <bitmap id="FrogImageFenix7x" filename="MamaKvaMiniKvaFenix7x.png"/>
+    <bitmap id="FrogImageFR265s" filename="MamaKvaMiniKvaFR265s.png"/>
+
+
+
+    <bitmap id="MamaKvaImageFenix7x" filename="MajaKva_Fenix7x.png"/>
+    <bitmap id="MamaKvaImageFR265s" filename="MajaKva_265s.png"/>
+
+    <bitmap id="IconHeart" filename="heart.png" />
+    <bitmap id="IconSteps" filename="step.png" />
+    <bitmap id="IconMetabolism" filename="metabolism.png" />
+    <bitmap id="IconBluetooth" filename="bluetooth.png"/>
+    <bitmap id="IconHeartStandard" filename="favorite_heart.png"/>
+</resources>

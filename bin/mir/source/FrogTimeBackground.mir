@@ -1,0 +1,46 @@
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 6; @symbol_classdef = [Background,6,6,16]; @symbol_extends<0> = [WatchUi,6,25,32]; @symbol_extends<1> = [Drawable,6,33,41]; ]
+class Background extends WatchUi.Drawable {
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    function initialize() as Void {
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeBackground_mc_8_26_14_4_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" 9 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeBackground_mc_8_26_14_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeBackground_mc_8_26_14_4_stop" ]
+        %dictionary.1 = local;
+        symbol [ dictionary %dictionary.1 9 12 22 ];
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        symbol [ identifier %tmp.3 10 13 23 const ];
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+        symbol [ dictionary %dictionary.1 9 12 22 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc" 13 8 ]
+        symbol [ Drawable %tmp.8 13 8 16 ];
+        %tmp.8 = getv ? :Drawable;
+        symbol [ initialize %tmp.9 13 17 27 ];
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.10 = lgetv %dictionary.1;
+        symbol [ dictionary %tmp.10 13 28 38 ];
+        invoke %tmp.8 %tmp.9(%tmp.10);
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeBackground_mc_8_26_14_4_stop:
+    }
+}
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeBackground.mc"; @line = 1; ]
+<init> {
+}

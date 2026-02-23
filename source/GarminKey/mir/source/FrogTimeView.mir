@@ -1,0 +1,485 @@
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [WatchUi,5,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 7; @symbol_classdef = [FrogTimeView,7,6,18]; @symbol_extends<0> = [WatchUi,7,27,34]; @symbol_extends<1> = [WatchFace,7,35,44]; ]
+class FrogTimeView extends WatchUi.WatchFace {
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 9; @position = 12; @symbol_vardef = [_mojObrazok,9,12,23]; @symbol_type<0> = [WatchUi,9,27,34]; @symbol_type<1> = [BitmapResource,9,35,49]; ]
+    private
+    var _mojObrazok as WatchUi.BitmapResource or Null;
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
+    function initialize() as Void {
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_11_26_13_4_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 12 8 ]
+        symbol [ WatchFace %tmp.2 12 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 12 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_11_26_13_4_stop:
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 16; @symbol_functiondef = [onLayout,16,13,21]; @symbol_param<0> = [dc,16,22,24]; @symbol_param<0>_type<0> = [Dc,16,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 17 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 17 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 17 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 17 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ WatchFace %tmp.6 17 30 39 ];
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 17 40 42 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 19 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 19 12 16 ];
+        symbol [ View %tmp.10 19 19 23 ];
+        %tmp.10 = getv ? :View;
+        symbol [ findDrawableById %tmp.11 19 24 40 ];
+        %tmp.11 = getv function %tmp.10 :findDrawableById;
+        %tmp.12 = "TimeLabel";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = as %tmp.13 Text;
+        symbol [ Text %tmp.14 19 57 61 ];
+        lputv %view.1 %tmp.14;
+        symbol [ view %view.1 19 12 16 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 21 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_stop" ]
+        %batY.2 = local;
+        symbol [ batY %batY.2 21 12 16 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 21 19 21 ];
+        symbol [ getHeight %tmp.16 21 22 31 ];
+        %tmp.16 = getv function %tmp.15 :getHeight;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        %tmp.18 = 0.1;
+        %tmp.19 = mul %tmp.17 %tmp.18;
+        lputv %batY.2 %tmp.19;
+        symbol [ batY %batY.2 21 12 16 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 22 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_stop" ]
+        %batHeight.3 = local;
+        symbol [ batHeight %batHeight.3 22 12 21 ];
+        %tmp.20 = 14;
+        lputv %batHeight.3 %tmp.20;
+        symbol [ batHeight %batHeight.3 22 12 21 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 26 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_stop" ]
+        %medzera.4 = local;
+        symbol [ medzera %medzera.4 26 12 19 ];
+        %tmp.21 = -20;
+        lputv %medzera.4 %tmp.21;
+        symbol [ medzera %medzera.4 26 12 19 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 29 8 ]
+        %tmp.22 = lgetv %view.1;
+        symbol [ view %tmp.22 29 8 12 ];
+        %tmp.23 = lgetv %batY.2;
+        symbol [ batY %tmp.23 29 21 25 ];
+        %tmp.24 = lgetv %batHeight.3;
+        symbol [ batHeight %tmp.24 29 28 37 ];
+        %tmp.25 = add %tmp.23 %tmp.24;
+        %tmp.26 = lgetv %medzera.4;
+        symbol [ medzera %tmp.26 29 40 47 ];
+        %tmp.27 = add %tmp.25 %tmp.26;
+        symbol [ toNumber %tmp.28 29 49 57 ];
+        %tmp.28 = getv function %tmp.27 :toNumber;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        symbol [ locY ? 29 13 17 ];
+        putv %tmp.22 :locY %tmp.29;
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 31 8 ]
+        symbol [ WatchUi %tmp.30 31 22 29 ];
+        %tmp.30 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.31 31 30 42 ];
+        %tmp.31 = getv function %tmp.30 :loadResource;
+        symbol [ Rez %tmp.33 31 43 46 ];
+        %tmp.33 = getv ? :Rez;
+        symbol [ Drawables %tmp.34 31 47 56 ];
+        %tmp.34 = getv %tmp.33 :Drawables;
+        symbol [ ZabaObrazok %tmp.35 31 57 68 ];
+        %tmp.35 = getv %tmp.34 :ZabaObrazok;
+        %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.35);
+        %tmp.37 = as %tmp.36 WatchUi.BitmapResource;
+        symbol [ WatchUi %tmp.37 31 73 80 ];
+        symbol [ BitmapResource %tmp.37 31 81 95 ];
+        symbol [ _mojObrazok ? 31 8 19 ];
+        putv self :_mojObrazok %tmp.37;
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_16_40_32_4_stop:
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 36; @symbol_functiondef = [onShow,36,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 39; @symbol_functiondef = [onUpdate,39,13,21]; @symbol_param<0> = [dc,39,22,24]; @symbol_param<0>_type<0> = [Dc,39,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 41 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 41 12 21 ];
+        symbol [ System %tmp.1 41 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 41 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 41 12 21 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 42 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 42 12 22 ];
+        symbol [ Lang %tmp.4 42 25 29 ];
+        %tmp.4 = getm $.Toybox.Lang;
+        symbol [ format %tmp.5 42 30 36 ];
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$:$2$";
+        %tmp.7 = newa 2;
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 42 49 58 ];
+        symbol [ hour %tmp.9 42 59 63 ];
+        %tmp.9 = getv %tmp.8 :hour;
+        %tmp.10 = dup %tmp.7;
+        %tmp.11 = aputv %tmp.10 0 %tmp.9;
+        %tmp.12 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.12 42 65 74 ];
+        symbol [ min %tmp.13 42 75 78 ];
+        %tmp.13 = getv %tmp.12 :min;
+        symbol [ format %tmp.14 42 79 85 ];
+        %tmp.14 = getv function %tmp.13 :format;
+        %tmp.15 = "%02d";
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        %tmp.17 = dup %tmp.11;
+        %tmp.18 = aputv %tmp.17 1 %tmp.16;
+        %tmp.19 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.18);
+        lputv %timeString.2 %tmp.19;
+        symbol [ timeString %timeString.2 42 12 22 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 43 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %timeView.3 = local;
+        symbol [ timeView %timeView.3 43 12 20 ];
+        symbol [ View %tmp.21 43 23 27 ];
+        %tmp.21 = getv ? :View;
+        symbol [ findDrawableById %tmp.22 43 28 44 ];
+        %tmp.22 = getv function %tmp.21 :findDrawableById;
+        %tmp.23 = "TimeLabel";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = as %tmp.24 Text;
+        symbol [ Text %tmp.25 43 61 65 ];
+        lputv %timeView.3 %tmp.25;
+        symbol [ timeView %timeView.3 43 12 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 44 8 ]
+        %tmp.26 = lgetv %timeView.3;
+        symbol [ timeView %tmp.26 44 8 16 ];
+        symbol [ setText %tmp.27 44 17 24 ];
+        %tmp.27 = getv function %tmp.26 :setText;
+        %tmp.28 = lgetv %timeString.2;
+        symbol [ timeString %tmp.28 44 25 35 ];
+        invoke %tmp.26 %tmp.27(%tmp.28);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 47 8 ]
+        symbol [ View %tmp.30 47 8 12 ];
+        %tmp.30 = getv ? :View;
+        symbol [ onUpdate %tmp.31 47 13 21 ];
+        %tmp.31 = getv function %tmp.30 :onUpdate;
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 47 22 24 ];
+        invoke %tmp.30 %tmp.31(%tmp.32);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 50 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %stats.4 = local;
+        symbol [ stats %stats.4 50 12 17 ];
+        symbol [ System %tmp.33 50 20 26 ];
+        %tmp.33 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.34 50 27 41 ];
+        %tmp.34 = getv function %tmp.33 :getSystemStats;
+        %tmp.35 = invoke %tmp.33 %tmp.34();
+        lputv %stats.4 %tmp.35;
+        symbol [ stats %stats.4 50 12 17 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 51 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %battery.5 = local;
+        symbol [ battery %battery.5 51 12 19 ];
+        %tmp.36 = lgetv %stats.4;
+        symbol [ stats %tmp.36 51 22 27 ];
+        symbol [ battery %tmp.37 51 28 35 ];
+        %tmp.37 = getv %tmp.36 :battery;
+        lputv %battery.5 %tmp.37;
+        symbol [ battery %battery.5 51 12 19 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 54 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %batWidth.6 = local;
+        symbol [ batWidth %batWidth.6 54 12 20 ];
+        %tmp.38 = 30;
+        lputv %batWidth.6 %tmp.38;
+        symbol [ batWidth %batWidth.6 54 12 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 55 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %batHeight.7 = local;
+        symbol [ batHeight %batHeight.7 55 12 21 ];
+        %tmp.39 = 14;
+        lputv %batHeight.7 %tmp.39;
+        symbol [ batHeight %batHeight.7 55 12 21 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 56 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %batX.8 = local;
+        symbol [ batX %batX.8 56 12 16 ];
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 56 20 22 ];
+        symbol [ getWidth %tmp.41 56 23 31 ];
+        %tmp.41 = getv function %tmp.40 :getWidth;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = lgetv %batWidth.6;
+        symbol [ batWidth %tmp.43 56 36 44 ];
+        %tmp.44 = sub %tmp.42 %tmp.43;
+        %tmp.45 = 2;
+        %tmp.46 = div %tmp.44 %tmp.45;
+        lputv %batX.8 %tmp.46;
+        symbol [ batX %batX.8 56 12 16 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 57 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %batY.9 = local;
+        symbol [ batY %batY.9 57 12 16 ];
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 57 19 21 ];
+        symbol [ getHeight %tmp.48 57 22 31 ];
+        %tmp.48 = getv function %tmp.47 :getHeight;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        %tmp.50 = 0.1;
+        %tmp.51 = mul %tmp.49 %tmp.50;
+        lputv %batY.9 %tmp.51;
+        symbol [ batY %batY.9 57 12 16 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 60 8 ]
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 60 8 10 ];
+        symbol [ setColor %tmp.53 60 11 19 ];
+        %tmp.53 = getv function %tmp.52 :setColor;
+        symbol [ Graphics %tmp.54 60 20 28 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.55 60 29 40 ];
+        %tmp.55 = getv %tmp.54 :COLOR_WHITE;
+        symbol [ Graphics %tmp.56 60 42 50 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.57 60 51 68 ];
+        %tmp.57 = getv %tmp.56 :COLOR_TRANSPARENT;
+        invoke %tmp.52 %tmp.53(%tmp.55, %tmp.57);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 62 8 ]
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 62 8 10 ];
+        symbol [ drawRectangle %tmp.59 62 11 24 ];
+        %tmp.59 = getv function %tmp.58 :drawRectangle;
+        %tmp.60 = lgetv %batX.8;
+        symbol [ batX %tmp.60 62 25 29 ];
+        %tmp.61 = lgetv %batY.9;
+        symbol [ batY %tmp.61 62 31 35 ];
+        %tmp.62 = lgetv %batWidth.6;
+        symbol [ batWidth %tmp.62 62 37 45 ];
+        %tmp.63 = lgetv %batHeight.7;
+        symbol [ batHeight %tmp.63 62 47 56 ];
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.61, %tmp.62, %tmp.63);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 66 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 66 8 10 ];
+        symbol [ fillRectangle %tmp.65 66 11 24 ];
+        %tmp.65 = getv function %tmp.64 :fillRectangle;
+        %tmp.66 = lgetv %batX.8;
+        symbol [ batX %tmp.66 66 25 29 ];
+        %tmp.67 = lgetv %batWidth.6;
+        symbol [ batWidth %tmp.67 66 32 40 ];
+        %tmp.68 = add %tmp.66 %tmp.67;
+        %tmp.69 = lgetv %batY.9;
+        symbol [ batY %tmp.69 66 42 46 ];
+        %tmp.70 = 4;
+        %tmp.71 = add %tmp.69 %tmp.70;
+        %tmp.72 = 3;
+        %tmp.73 = 6;
+        invoke %tmp.64 %tmp.65(%tmp.68, %tmp.71, %tmp.72, %tmp.73);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 70 8 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop" ]
+        %fillWidth.10 = local;
+        symbol [ fillWidth %fillWidth.10 70 12 21 ];
+        %tmp.74 = lgetv %batWidth.6;
+        symbol [ batWidth %tmp.74 70 25 33 ];
+        %tmp.75 = 4;
+        %tmp.76 = sub %tmp.74 %tmp.75;
+        %tmp.77 = lgetv %battery.5;
+        symbol [ battery %tmp.77 70 42 49 ];
+        %tmp.78 = 100.0;
+        %tmp.79 = div %tmp.77 %tmp.78;
+        %tmp.80 = mul %tmp.76 %tmp.79;
+        lputv %fillWidth.10 %tmp.80;
+        symbol [ fillWidth %fillWidth.10 70 12 21 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 73 8 ]
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_stmt:
+        %tmp.81 = lgetv %battery.5;
+        symbol [ battery %tmp.81 73 12 19 ];
+        %tmp.82 = 20.0;
+        %tmp.83 = lte %tmp.81 %tmp.82;
+        bf %tmp.83 @_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_else_false;
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_true:
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_29_75_8_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 74 12 ]
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 74 12 14 ];
+        symbol [ setColor %tmp.85 74 15 23 ];
+        %tmp.85 = getv function %tmp.84 :setColor;
+        symbol [ Graphics %tmp.86 74 24 32 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.87 74 33 42 ];
+        %tmp.87 = getv %tmp.86 :COLOR_RED;
+        symbol [ Graphics %tmp.88 74 44 52 ];
+        %tmp.88 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.89 74 53 70 ];
+        %tmp.89 = getv %tmp.88 :COLOR_TRANSPARENT;
+        invoke %tmp.84 %tmp.85(%tmp.87, %tmp.89);
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_29_75_8_stop:
+        goto @_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_end;
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_else_false:
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_75_15_77_8_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 76 12 ]
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 76 12 14 ];
+        symbol [ setColor %tmp.91 76 15 23 ];
+        %tmp.91 = getv function %tmp.90 :setColor;
+        symbol [ Graphics %tmp.92 76 24 32 ];
+        %tmp.92 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.93 76 33 44 ];
+        %tmp.93 = getv %tmp.92 :COLOR_WHITE;
+        symbol [ Graphics %tmp.94 76 46 54 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.95 76 55 72 ];
+        %tmp.95 = getv %tmp.94 :COLOR_TRANSPARENT;
+        invoke %tmp.90 %tmp.91(%tmp.93, %tmp.95);
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_75_15_77_8_stop:
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_73_8_77_8_if_end:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 80 8 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 80 8 10 ];
+        symbol [ fillRectangle %tmp.97 80 11 24 ];
+        %tmp.97 = getv function %tmp.96 :fillRectangle;
+        %tmp.98 = lgetv %batX.8;
+        symbol [ batX %tmp.98 80 25 29 ];
+        %tmp.99 = 2;
+        %tmp.100 = add %tmp.98 %tmp.99;
+        %tmp.101 = lgetv %batY.9;
+        symbol [ batY %tmp.101 80 35 39 ];
+        %tmp.102 = 2;
+        %tmp.103 = add %tmp.101 %tmp.102;
+        %tmp.104 = lgetv %fillWidth.10;
+        symbol [ fillWidth %tmp.104 80 45 54 ];
+        %tmp.105 = lgetv %batHeight.7;
+        symbol [ batHeight %tmp.105 80 56 65 ];
+        %tmp.106 = 4;
+        %tmp.107 = sub %tmp.105 %tmp.106;
+        invoke %tmp.96 %tmp.97(%tmp.100, %tmp.103, %tmp.104, %tmp.107);
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 83 8 ]
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_8_96_8_if_stmt:
+        symbol [ _mojObrazok %tmp.109 83 12 23 ];
+        %tmp.109 = getv ? :_mojObrazok;
+        %tmp.110 = null;
+        %tmp.111 = ne %tmp.109 %tmp.110;
+        bf %tmp.111 @_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_8_96_8_if_end;
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_8_96_8_if_true:
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_start:
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 85 12 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_stop" ]
+        %imgW.11 = local;
+        symbol [ imgW %imgW.11 85 16 20 ];
+        symbol [ _mojObrazok %tmp.113 85 23 34 ];
+        %tmp.113 = getv ? :_mojObrazok;
+        %tmp.114 = as %tmp.113 { (!Null) };
+        symbol [ getWidth %tmp.115 85 35 43 ];
+        %tmp.115 = getv function %tmp.114 :getWidth;
+        %tmp.116 = invoke %tmp.114 %tmp.115();
+        lputv %imgW.11 %tmp.116;
+        symbol [ imgW %imgW.11 85 16 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 86 12 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_stop" ]
+        %imgH.12 = local;
+        symbol [ imgH %imgH.12 86 16 20 ];
+        symbol [ _mojObrazok %tmp.118 86 23 34 ];
+        %tmp.118 = getv ? :_mojObrazok;
+        symbol [ getHeight %tmp.119 86 35 44 ];
+        %tmp.119 = getv function %tmp.118 :getHeight;
+        %tmp.120 = invoke %tmp.118 %tmp.119();
+        lputv %imgH.12 %tmp.120;
+        symbol [ imgH %imgH.12 86 16 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 89 12 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_stop" ]
+        %imgX.13 = local;
+        symbol [ imgX %imgX.13 89 16 20 ];
+        %tmp.121 = lgetv %dc;
+        symbol [ dc %tmp.121 89 24 26 ];
+        symbol [ getWidth %tmp.122 89 27 35 ];
+        %tmp.122 = getv function %tmp.121 :getWidth;
+        %tmp.123 = invoke %tmp.121 %tmp.122();
+        %tmp.124 = lgetv %imgW.11;
+        symbol [ imgW %tmp.124 89 40 44 ];
+        %tmp.125 = sub %tmp.123 %tmp.124;
+        %tmp.126 = 2;
+        %tmp.127 = div %tmp.125 %tmp.126;
+        lputv %imgX.13 %tmp.127;
+        symbol [ imgX %imgX.13 89 16 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 92 12 ]
+        [ "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_start" "_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_stop" ]
+        %imgY.14 = local;
+        symbol [ imgY %imgY.14 92 16 20 ];
+        %tmp.128 = lgetv %dc;
+        symbol [ dc %tmp.128 92 24 26 ];
+        symbol [ getHeight %tmp.129 92 27 36 ];
+        %tmp.129 = getv function %tmp.128 :getHeight;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        %tmp.131 = 0.70;
+        %tmp.132 = mul %tmp.130 %tmp.131;
+        %tmp.133 = lgetv %imgH.12;
+        symbol [ imgH %tmp.133 92 50 54 ];
+        %tmp.134 = 2;
+        %tmp.135 = div %tmp.133 %tmp.134;
+        %tmp.136 = sub %tmp.132 %tmp.135;
+        lputv %imgY.14 %tmp.136;
+        symbol [ imgY %imgY.14 92 16 20 ];
+[ "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc" 95 12 ]
+        %tmp.137 = lgetv %dc;
+        symbol [ dc %tmp.137 95 12 14 ];
+        symbol [ drawBitmap %tmp.138 95 15 25 ];
+        %tmp.138 = getv function %tmp.137 :drawBitmap;
+        %tmp.139 = lgetv %imgX.13;
+        symbol [ imgX %tmp.139 95 26 30 ];
+        %tmp.140 = lgetv %imgY.14;
+        symbol [ imgY %tmp.140 95 32 36 ];
+        symbol [ _mojObrazok %tmp.142 95 38 49 ];
+        %tmp.142 = getv ? :_mojObrazok;
+        invoke %tmp.137 %tmp.138(%tmp.139, %tmp.140, %tmp.142);
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_33_96_8_stop:
+        goto @_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_8_96_8_if_end;
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_83_8_96_8_if_end:
+_Users_tomas_Documents_Learning_Materials_GarminFace_FrogTime_source_FrogTimeView_mc_39_40_97_4_stop:
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 102; @symbol_functiondef = [onHide,102,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 106; @symbol_functiondef = [onExitSleep,106,13,24]; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 110; @symbol_functiondef = [onEnterSleep,110,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/Users/tomas/Documents/Learning Materials/GarminFace/FrogTime/source/FrogTimeView.mc"; @line = 1; ]
+<init> {
+}
