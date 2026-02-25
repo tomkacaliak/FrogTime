@@ -12,12 +12,8 @@ import Toybox.Time;
 
 class FrogTimeView extends WatchUi.WatchFace {
 
-    // Odstránil som _mojObrazok, už ho nepotrebujeme
     private var _imageMMamaKvaMiniKvaFenix7x as WatchUi.BitmapResource?;
     private var _imageMMamaKvaMiniKvaFR265s as WatchUi.BitmapResource?;
-
-    private var _imageMajaKvaFenix7x as WatchUi.BitmapResource?;
-    private var _imageMajaKvaFR265s as WatchUi.BitmapResource?;
 
     private var _heartIcon as WatchUi.BitmapResource?;
     private var _stepIcon as WatchUi.BitmapResource?;
@@ -36,30 +32,25 @@ class FrogTimeView extends WatchUi.WatchFace {
         var view = View.findDrawableById("TimeLabel") as Text;
         var batY = dc.getHeight() * 0.1;
         var batHeight = 14;
-        var medzera = -5; 
-        view.locY = (batY + batHeight + medzera).toNumber();
+        var spacing = -5; 
+        view.locY = (batY + batHeight + spacing).toNumber();
 
-        // Načítanie ikon
+        // Loading icons
         _heartIcon = WatchUi.loadResource(Rez.Drawables.IconHeartStandard) as WatchUi.BitmapResource;
         _stepIcon = WatchUi.loadResource(Rez.Drawables.IconSteps) as WatchUi.BitmapResource;
         _metabolismIcon = WatchUi.loadResource(Rez.Drawables.IconMetabolism) as WatchUi.BitmapResource;
         _bluetoothIcon = WatchUi.loadResource(Rez.Drawables.IconBluetooth) as WatchUi.BitmapResource;
         
-        // Načítanie špecifických obrázkov pre "MamaKvaMiniKva" (párne hodiny)
-        // Predpokladám názvy v drawables.xml: ImageMMamaKvaMiniKvaFenix7x, ImageMMamaKvaMiniKvaFR265s
+        // Loading specific images for "MamaKvaMiniKva" ONLY
         _imageMMamaKvaMiniKvaFenix7x = WatchUi.loadResource(Rez.Drawables.FrogImageFenix7x) as WatchUi.BitmapResource;
         _imageMMamaKvaMiniKvaFR265s = WatchUi.loadResource(Rez.Drawables.FrogImageFR265s) as WatchUi.BitmapResource;
-
-        // Načítanie špecifických obrázkov pre "MajaKva" (nepárne hodiny)
-        _imageMajaKvaFenix7x = WatchUi.loadResource(Rez.Drawables.MamaKvaImageFenix7x) as WatchUi.BitmapResource;
-        _imageMajaKvaFR265s = WatchUi.loadResource(Rez.Drawables.MamaKvaImageFR265s) as WatchUi.BitmapResource;
     }
 
     function onShow() as Void {
     }
 
     function onUpdate(dc as Dc) as Void {
-        // --- 1. ČAS ---
+        // --- 1. TIME ---
         var clockTime = System.getClockTime();
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
         var timeView = View.findDrawableById("TimeLabel") as Text;
@@ -70,20 +61,20 @@ class FrogTimeView extends WatchUi.WatchFace {
         var screenW = dc.getWidth();
         var screenH = dc.getHeight();
 
-        // --- ROZPOZNANIE DISPLEJA ---
+        // --- DISPLAY RECOGNITION ---
         var isHighRes = (screenW >= 360); 
 
-        // --- 2. SEKUNDY ---
-        if (_isAwake) {
+        // --- 2. SECONDS (ONLY FOR FR265s / HighRes) ---
+        if (_isAwake && isHighRes) {
             var secString = clockTime.sec.format("%02d");
-            var secX = isHighRes ? screenW * 0.74 : screenW * 0.76; 
-            var secY = isHighRes ? screenH * 0.36 : screenH * 0.34;
+            var secX = screenW * 0.74;
+            var secY = screenH * 0.36;
             
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(secX, secY, Graphics.FONT_XTINY, secString, Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // --- 3. BATÉRIA, PERCENTÁ A BLUETOOTH ---
+        // --- 3. BATTERY, PERCENTAGE AND BLUETOOTH ---
         var stats = System.getSystemStats();
         var battery = stats.battery; 
 
@@ -92,7 +83,7 @@ class FrogTimeView extends WatchUi.WatchFace {
         var batX = (screenW - batWidth) / 2; 
         var batY = screenH * 0.1; 
 
-        // A) Vykreslenie samotnej baterky
+        // A) Drawing the battery
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawRectangle(batX, batY, batWidth, batHeight);
         dc.fillRectangle(batX + batWidth, batY + (batHeight / 4), 3, batHeight / 2);
@@ -105,14 +96,14 @@ class FrogTimeView extends WatchUi.WatchFace {
         }
         dc.fillRectangle(batX + 2, batY + 2, fillWidth, batHeight - 4);
 
-        // B) Vykreslenie percent
+        // B) Drawing percentage
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var textX = batX + batWidth + 8; 
         var batFont = Graphics.FONT_XTINY; 
         var textCenterY = batY + (batHeight / 2);
         dc.drawText(textX, textCenterY, batFont, battery.format("%d") + "%", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // C) Vykreslenie Bluetooth
+        // C) Drawing Bluetooth
         var deviceSettings = System.getDeviceSettings();
         if (deviceSettings.phoneConnected && _bluetoothIcon != null) {
             var btX = batX - _bluetoothIcon.getWidth() - 8; 
@@ -120,7 +111,7 @@ class FrogTimeView extends WatchUi.WatchFace {
             dc.drawBitmap(btX, btY, _bluetoothIcon);
         }
 
-        // --- 4. ZDRAVOTNÉ DÁTA ---
+        // --- 4. HEALTH DATA ---
         var steps = 0;
         var calories = 0; 
         var activityInfo = ActivityMonitor.getInfo();
@@ -145,7 +136,7 @@ class FrogTimeView extends WatchUi.WatchFace {
             heartRateString = hr.toString();
         }
 
-        // --- 5. BOČNÉ PANELY ---
+        // --- 5. SIDE PANELS ---
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var sideFont = Graphics.FONT_XTINY; 
         
@@ -167,7 +158,7 @@ class FrogTimeView extends WatchUi.WatchFace {
             bottomTextY = midY + 30;
         }
 
-        // -- ĽAVÁ STRANA --
+        // -- LEFT SIDE --
         if (_stepIcon != null) {
             dc.drawBitmap(leftCenter - (_stepIcon.getWidth() / 2), topIconY, _stepIcon);
         }
@@ -177,7 +168,7 @@ class FrogTimeView extends WatchUi.WatchFace {
         dc.drawText(leftCenter, bottomIconY, sideFont, today.day.toString(), Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(leftCenter, bottomTextY, sideFont, today.month.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
 
-        // -- PRAVÁ STRANA --
+        // -- RIGHT SIDE --
         if (_heartIcon != null) {
             dc.drawBitmap(rightCenter - (_heartIcon.getWidth() / 2), topIconY, _heartIcon);
         }
@@ -188,34 +179,24 @@ class FrogTimeView extends WatchUi.WatchFace {
         }
         dc.drawText(rightCenter, bottomTextY, sideFont, calories.toString(), Graphics.TEXT_JUSTIFY_CENTER);
 
-        // --- 6. ŽABA / MAJAKVA (STRIEDANIE OBRÁZKOV) ---
-        var aktualnyObrazok = null;
+        // --- 6. FROG IMAGE (MAMAKVAMINIKVA) ---
+        var currentImage = null;
 
-        if (clockTime.hour % 2 == 0) {
-            // Párna hodina: MamaKvaMiniKva (rozlíšené podľa zariadenia)
-            if (isHighRes) {
-                aktualnyObrazok = _imageMMamaKvaMiniKvaFR265s;
-            } else {
-                aktualnyObrazok = _imageMMamaKvaMiniKvaFenix7x;
-            }
-        } 
-        else {
-            // Nepárna hodina: MajaKva (rozlíšené podľa zariadenia)
-            if (isHighRes) {
-                aktualnyObrazok = _imageMajaKvaFR265s; 
-            } else {
-                aktualnyObrazok = _imageMajaKvaFenix7x; 
-            }
+        if (isHighRes) {
+            currentImage = _imageMMamaKvaMiniKvaFR265s;
+        } else {
+            currentImage = _imageMMamaKvaMiniKvaFenix7x;
         }
 
-        // Ak sme úspešne priradili obrázok (a naozaj existuje v pamäti), vykreslíme ho
-        if (aktualnyObrazok != null) {
-            var imgW = aktualnyObrazok.getWidth();
-            var imgH = aktualnyObrazok.getHeight();
+        if (currentImage != null) {
+            var imgW = currentImage.getWidth();
+            var imgH = currentImage.getHeight();
             var imgX = (screenW - imgW) / 2;
+            
+            // Positioning: 0.68 for FR265s, 0.65 for Fenix
             var imgY = isHighRes ? (screenH * 0.68) - (imgH / 2) : (screenH * 0.65) - (imgH / 2); 
             
-            dc.drawBitmap(imgX, imgY, aktualnyObrazok);
+            dc.drawBitmap(imgX, imgY, currentImage);
         }
     }
 
