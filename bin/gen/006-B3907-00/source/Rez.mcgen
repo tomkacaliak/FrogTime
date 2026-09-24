@@ -8,6 +8,7 @@ module Rez {
     module Drawables {
         (:initialized) var FrogImageFenix7x as ResourceId;
         (:initialized) var FrogImageFR265s as ResourceId;
+        (:initialized) var FrogImageFenix8 as ResourceId;
         (:initialized) var MamaKvaImageFenix7x as ResourceId;
         (:initialized) var MamaKvaImageFR265s as ResourceId;
         (:initialized) var IconHeart as ResourceId;

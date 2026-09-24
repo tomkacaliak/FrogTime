@@ -22,6 +22,7 @@ class FrogTimeView extends WatchUi.WatchFace {
     // State variables
     private var _isAwake as Boolean = true;
     private var _isHighRes as Boolean = false;
+    private var _isFenix8 as Boolean = false; // Pridaná premenná na detekciu Fenix 8
 
     // Coordinates (pre-calculated)
     private var _screenW, _screenH;
@@ -42,6 +43,7 @@ class FrogTimeView extends WatchUi.WatchFace {
         _screenW = dc.getWidth();
         _screenH = dc.getHeight();
         _isHighRes = (_screenW >= 360);
+        _isFenix8 = (_screenW >= 416); // Ak je šírka 416 alebo 454, je to Fenix 8
 
         // 2. Adjust TimeLabel position
         var view = View.findDrawableById("TimeLabel") as Text;
@@ -57,9 +59,16 @@ class FrogTimeView extends WatchUi.WatchFace {
         _bluetoothIcon = WatchUi.loadResource(Rez.Drawables.IconBluetooth) as WatchUi.BitmapResource;
         
         // 4. Optimized frog image loading (only one!)
-        if (_isHighRes) {
+        if (_screenW >= 454) {
+            // Pre Fenix 8 51mm (rozlíšenie 454x454)
+            _frogImage = WatchUi.loadResource(Rez.Drawables.FrogImageFenix8) as WatchUi.BitmapResource;
+        } 
+        else if (_screenW >= 360) {
+            // Pre stredne veľké AMOLED displeje (napr. FR265s s 360px)
             _frogImage = WatchUi.loadResource(Rez.Drawables.FrogImageFR265s) as WatchUi.BitmapResource;
-        } else {
+        } 
+        else {
+            // Pre menšie displeje (napr. Fenix 7x)
             _frogImage = WatchUi.loadResource(Rez.Drawables.FrogImageFenix7x) as WatchUi.BitmapResource;
         }
 
@@ -115,8 +124,28 @@ class FrogTimeView extends WatchUi.WatchFace {
         // Draw background and TimeLabel from layout
         View.onUpdate(dc);
 
-        // --- 2. SECONDS (ONLY FOR FR265s / HighRes) ---
-        if (_isAwake && _isHighRes) {
+        // --- NOVÉ: Hrubší font času pre Fenix 8 ---
+        if (_isFenix8) {
+            var origX = timeView.locX;
+            var origY = timeView.locY;
+            
+            timeView.locX = origX + 1;
+            timeView.draw(dc);
+            
+            timeView.locX = origX + 2;
+            timeView.draw(dc);
+
+            timeView.locY = origY + 1;
+            timeView.locX = origX + 1;
+            timeView.draw(dc);
+            
+            // Vrátenie pôvodných súradníc
+            timeView.locX = origX;
+            timeView.locY = origY;
+        }
+
+        // --- 2. SECONDS (Zobrazené iba na FR265s / HighRes, odstránené pre Fenix 8) ---
+        if (_isAwake && _isHighRes && !_isFenix8) {
             var secString = clockTime.sec.format("%02d");
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(_secX, _secY, Graphics.FONT_XTINY, secString, Graphics.TEXT_JUSTIFY_CENTER);
