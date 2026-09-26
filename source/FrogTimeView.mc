@@ -96,7 +96,8 @@ class FrogTimeView extends WatchUi.WatchFace {
         // text, so it's sized smaller than the side-panel icons instead of matching them 1:1.
         var statusIconH = (iconTargetH * 0.6).toNumber();
         if (_bluetoothIcon != null) {
-            var dims = fitIconToHeight(_bluetoothIcon, statusIconH);
+            var bluetoothIconH = (iconTargetH * 0.75).toNumber();
+            var dims = fitIconToHeight(_bluetoothIcon, bluetoothIconH);
             _bluetoothIconW = dims[0]; _bluetoothIconH = dims[1];
         }
 
