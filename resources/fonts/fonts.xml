@@ -1,0 +1,13 @@
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!--
+        M PLUS Rounded 1c ExtraBold (SIL Open Font License 1.1) used as a free,
+        legally embeddable stand-in for Apple's SF Compact Rounded, the font
+        Apple Watch uses for its time display: SF's license does not permit
+        embedding it in non-Apple software. M PLUS Rounded 1c is a similar
+        rounded geometric sans. One bitmap font per device resolution, digits +
+        colon only, generated from MPLUSRounded1c-ExtraBold.ttf.
+    -->
+    <font id="TimeFontFenix8" filename="TimeFontFenix8.fnt" antialias="true" />
+    <font id="TimeFontFR265s" filename="TimeFontFR265s.fnt" antialias="true" />
+    <font id="TimeFontFenix7x" filename="TimeFontFenix7x.fnt" antialias="true" />
+</resources>

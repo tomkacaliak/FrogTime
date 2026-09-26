@@ -1,0 +1,18 @@
+# Connect IQ / Monkey C build output
+bin/
+gen/
+mir/
+internal-mir/
+*.prg
+*.prg.debug.xml
+*-settings.json
+
+# Developer signing key - never commit this
+*.der
+developer_key*
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/

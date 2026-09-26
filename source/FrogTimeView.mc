@@ -32,32 +32,74 @@ class FrogTimeView extends WatchUi.WatchFace {
     private var _topIconY, _topTextY, _bottomIconY, _bottomTextY;
     private var _frogX, _frogY;
 
+    // Icon sizes, fitted to the side-panel font height
+    private var _sideFont;
+    private var _stepIconW, _stepIconH;
+    private var _heartIconW, _heartIconH;
+    private var _metabolismIconW, _metabolismIconH;
+    private var _bluetoothIconW, _bluetoothIconH;
+
     function initialize() {
         WatchFace.initialize();
     }
 
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
-    
+
         // 1. Get dimensions and determine display type only ONCE
         _screenW = dc.getWidth();
         _screenH = dc.getHeight();
         _isHighRes = (_screenW >= 360);
         _isFenix8 = (_screenW >= 416); // Ak je šírka 416 alebo 454, je to Fenix 8
 
-        // 2. Adjust TimeLabel position
+        // 2. Adjust TimeLabel position and font (custom SF-alike font per device size)
         var view = View.findDrawableById("TimeLabel") as Text;
         var batRefY = _screenH * 0.1;
         var batRefHeight = 14;
-        var spacing = -5; 
+        var spacing = -5;
         view.locY = (batRefY + batRefHeight + spacing).toNumber();
+
+        // var timeFont;
+        // if (_screenW >= 454) {
+        //     timeFont = WatchUi.loadResource(Rez.Fonts.TimeFontFenix8);
+        // } else if (_screenW >= 360) {
+        //     timeFont = WatchUi.loadResource(Rez.Fonts.TimeFontFR265s);
+        // } else {
+        //     timeFont = WatchUi.loadResource(Rez.Fonts.TimeFontFenix7x);
+        // }
+        // view.setFont(timeFont);
+    
 
         // 3. Load icons
         _heartIcon = WatchUi.loadResource(Rez.Drawables.IconHeartStandard) as WatchUi.BitmapResource;
         _stepIcon = WatchUi.loadResource(Rez.Drawables.IconSteps) as WatchUi.BitmapResource;
         _metabolismIcon = WatchUi.loadResource(Rez.Drawables.IconMetabolism) as WatchUi.BitmapResource;
         _bluetoothIcon = WatchUi.loadResource(Rez.Drawables.IconBluetooth) as WatchUi.BitmapResource;
-        
+
+        // 3b. Fit icon sizes to the side-panel font height (instead of using
+        // each PNG's native pixel size), so icons and metric numbers scale together.
+        _sideFont = Graphics.FONT_XTINY;
+        var iconTargetH = dc.getFontHeight(_sideFont);
+        if (_stepIcon != null) {
+            var dims = fitIconToHeight(_stepIcon, iconTargetH);
+            _stepIconW = dims[0]; _stepIconH = dims[1];
+        }
+        if (_heartIcon != null) {
+            var dims = fitIconToHeight(_heartIcon, iconTargetH);
+            _heartIconW = dims[0]; _heartIconH = dims[1];
+        }
+        if (_metabolismIcon != null) {
+            var dims = fitIconToHeight(_metabolismIcon, iconTargetH);
+            _metabolismIconW = dims[0]; _metabolismIconH = dims[1];
+        }
+        // Status row (battery + bluetooth) reads as a compact indicator, not body
+        // text, so it's sized smaller than the side-panel icons instead of matching them 1:1.
+        var statusIconH = (iconTargetH * 0.6).toNumber();
+        if (_bluetoothIcon != null) {
+            var dims = fitIconToHeight(_bluetoothIcon, statusIconH);
+            _bluetoothIconW = dims[0]; _bluetoothIconH = dims[1];
+        }
+
         // 4. Optimized frog image loading (only one!)
         if (_screenW >= 454) {
             // Pre Fenix 8 51mm (rozlíšenie 454x454)
@@ -78,11 +120,11 @@ class FrogTimeView extends WatchUi.WatchFace {
         _secX = _screenW * 0.74;
         _secY = _screenH * 0.36;
 
-        // Battery
-        _batWidth = _isHighRes ? 36 : 30; 
-        _batHeight = _isHighRes ? 18 : 14; 
-        _batX = (_screenW - _batWidth) / 2; 
-        _batY = _screenH * 0.1; 
+        // Battery - sized to match the bluetooth status icon height
+        _batHeight = statusIconH;
+        _batWidth = _batHeight * 2;
+        _batX = (_screenW - _batWidth) / 2;
+        _batY = _screenH * 0.1;
 
         // Side panels
         _leftCenter = _screenW * 0.15; 
@@ -109,6 +151,14 @@ class FrogTimeView extends WatchUi.WatchFace {
             // Positioning: 0.68 for FR265s, 0.65 for Fenix
             _frogY = _isHighRes ? (_screenH * 0.68) - (imgH / 2) : (_screenH * 0.65) - (imgH / 2); 
         }
+    }
+
+    // Returns [width, height] for an icon scaled to targetH, preserving aspect ratio.
+    private function fitIconToHeight(icon as WatchUi.BitmapResource, targetH as Number) as Array<Number> {
+        var nativeW = icon.getWidth();
+        var nativeH = icon.getHeight();
+        var scaledW = (nativeW * targetH / nativeH).toNumber();
+        return [scaledW, targetH];
     }
 
     function onShow() as Void {
@@ -170,16 +220,16 @@ class FrogTimeView extends WatchUi.WatchFace {
 
         // B) Drawing percentage
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var textX = _batX + _batWidth + 8; 
+        var textX = _batX + _batWidth + 8;
         var textCenterY = _batY + (_batHeight / 2);
-        dc.drawText(textX, textCenterY, Graphics.FONT_XTINY, battery.format("%d") + "%", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(textX, textCenterY, _sideFont, battery.format("%d") + "%", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // C) Drawing Bluetooth
         var deviceSettings = System.getDeviceSettings();
         if (deviceSettings.phoneConnected && _bluetoothIcon != null) {
-            var btX = _batX - _bluetoothIcon.getWidth() - 8; 
-            var btY = _batY + (_batHeight - _bluetoothIcon.getHeight()) / 2; 
-            dc.drawBitmap(btX, btY, _bluetoothIcon);
+            var btX = _batX - _bluetoothIconW - 8;
+            var btY = _batY + (_batHeight - _bluetoothIconH) / 2;
+            dc.drawScaledBitmap(btX, btY, _bluetoothIconW, _bluetoothIconH, _bluetoothIcon);
         }
 
         // --- 4. HEALTH DATA ---
@@ -209,26 +259,26 @@ class FrogTimeView extends WatchUi.WatchFace {
 
         // --- 5. SIDE PANELS ---
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var sideFont = Graphics.FONT_XTINY; 
-        
+        var sideFont = _sideFont;
+
         // -- LEFT SIDE --
         if (_stepIcon != null) {
-            dc.drawBitmap(_leftCenter - (_stepIcon.getWidth() / 2), _topIconY, _stepIcon);
+            dc.drawScaledBitmap(_leftCenter - (_stepIconW / 2), _topIconY, _stepIconW, _stepIconH, _stepIcon);
         }
         dc.drawText(_leftCenter, _topTextY, sideFont, steps.toString(), Graphics.TEXT_JUSTIFY_CENTER);
-        
+
         var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         dc.drawText(_leftCenter, _bottomIconY, sideFont, today.day.toString(), Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(_leftCenter, _bottomTextY, sideFont, today.month.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
 
         // -- RIGHT SIDE --
         if (_heartIcon != null) {
-            dc.drawBitmap(_rightCenter - (_heartIcon.getWidth() / 2), _topIconY, _heartIcon);
+            dc.drawScaledBitmap(_rightCenter - (_heartIconW / 2), _topIconY, _heartIconW, _heartIconH, _heartIcon);
         }
         dc.drawText(_rightCenter, _topTextY, sideFont, heartRateString, Graphics.TEXT_JUSTIFY_CENTER);
 
         if (_metabolismIcon != null) {
-            dc.drawBitmap(_rightCenter - (_metabolismIcon.getWidth() / 2), _bottomIconY, _metabolismIcon);
+            dc.drawScaledBitmap(_rightCenter - (_metabolismIconW / 2), _bottomIconY, _metabolismIconW, _metabolismIconH, _metabolismIcon);
         }
         dc.drawText(_rightCenter, _bottomTextY, sideFont, calories.toString(), Graphics.TEXT_JUSTIFY_CENTER);
 
